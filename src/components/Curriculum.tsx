@@ -8,6 +8,7 @@ interface CvItem {
     titolo: string;
     url?: string;
 }
+
 type GroupedByYear = Record<number, CvItem[]>
 
 const Curriculum: React.FC = () => {
@@ -16,14 +17,14 @@ const Curriculum: React.FC = () => {
 
     useEffect(() => {
         const groupedByYear = data.reduce<GroupedByYear>((acc, item) => {
-            const year = item.anno
+            const year = item.anno;
 
             if (!acc[year]) {
-                acc[year] = []
+                acc[year] = [];
             }
 
-            acc[year].push(item)
-            return acc
+            acc[year].push(item);
+            return acc;
         }, {} as GroupedByYear);
         setGroupedData(groupedByYear);
     }, []);
@@ -50,7 +51,7 @@ const Curriculum: React.FC = () => {
                                                     onClick={() => setSelectedImage(`/images${item.url}`)}
                                                     className="mt-2 text-blue-600 rounded hover:text-blue-400"
                                                 >
-                                                    <i className="fa-solid fa-eye mr-1" />
+                                                    <i className="fa-solid fa-eye mr-1 text-xl" />
                                                 </button>
                                             )}
                                             </div>

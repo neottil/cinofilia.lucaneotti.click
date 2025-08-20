@@ -10,7 +10,8 @@ type NavbarProps = {
 const tabs = [
     { id: "home", label: "Home" },
     { id: "curriculum", label: "Curriculum" },
-    { id: "qualifications", label: "Qualifications" },
+    { id: "qualifications", label: "Qualifiche" },
+    { id: "contact", label: "Contatti" },
 ];
 
 const Navbar: React.FC<NavbarProps> = ({

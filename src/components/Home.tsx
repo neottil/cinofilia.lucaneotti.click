@@ -4,9 +4,9 @@ const Home: React.FC = () => (
     <section id="home">
         <div className="flex flex-col items-center gap-8">
             <div className="w-full flex justify-center mb-8">
-                <img src="https://s3.eu-central-1.amazonaws.com/cinofilia.lucaneoti.click-website/img-io-tai-selfie.jpg"
+                <img src="/images/img-io-tai-selfie.jpg"
                     alt="Luca - Educatore Cinofilo"
-                    className="profile-image w-64 h-64 object-cover transform scale-[1.3] mt-8" />
+                    className="profile-image w-80 h-80 object-cover mt-8" />
             </div>
             <div className="md:w-2/3">
                 <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Educatore Cinofilo - Passione e Relazione</h1>

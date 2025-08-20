@@ -13,8 +13,8 @@ interface ModalProps {
 }
 
 const MyModal: React.FC<ModalProps> = ({ isOpen, onClose, imageUrl, alt }) => {
-  const theme = useTheme()
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
     <Dialog

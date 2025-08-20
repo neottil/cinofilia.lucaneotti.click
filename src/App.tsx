@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Curriculum from "./components/Curriculum";
-import Qualifications from "./components/Qualifications";
+import Qualifiche from "./components/Qualifiche";
 import Footer from "./components/Footer";
+import ContattiForm from "./components/Contatti";
 
 const App: React.FC = () => {
 
@@ -22,7 +23,8 @@ const App: React.FC = () => {
             <main className="container mx-auto px-4 py-8">
                 {activeTab === "home" && <Home />}
                 {activeTab === "curriculum" && <Curriculum />}
-                {activeTab === "qualifications" && <Qualifications />}
+                {activeTab === "qualifications" && <Qualifiche />}
+                {activeTab === "contact" && <ContattiForm />}
             </main>
 
             <Footer />
