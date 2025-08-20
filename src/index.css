@@ -1,19 +1,42 @@
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #3b82f6;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
 .active-tab {
     border-bottom: 3px solid #3b82f6;
     color: #3b82f6;
     font-weight: 600;
 }
+
 .content-section {
     display: none;
 }
+
 .content-section.active {
     display: block;
 }
+
 .profile-image {
     border-radius: 50%;
     border: 4px solid #3b82f6;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
+
 @media (max-width: 640px) {
     .profile-image {
         width: 200px;
