@@ -49,6 +49,15 @@ const Qualifications: React.FC = () => {
                     </div>
 
                     <div className="image-container rounded-xl overflow-hidden shadow-lg bg-white relative"
+                        onClick={() => setSelectedImage("/images/qualifiche/Educatore_cis.jpg")}>
+                        <ModalImagePrevier
+                            imageUrl="/images/qualifiche/Educatore_cis.jpg"
+                            alt="Educatore Cinofilo CIS"
+                            description="Educatore Cinofilo CIS"
+                        />
+                    </div>
+
+                    <div className="image-container rounded-xl overflow-hidden shadow-lg bg-white relative"
                         onClick={() => setSelectedImage("/images/qualifiche/Diploma_FICSS.jpg")}>
                         <ModalImagePrevier
                             imageUrl="/images/qualifiche/Diploma_FICSS.jpg"
@@ -70,6 +79,14 @@ const Qualifications: React.FC = () => {
                         <ModalImagePrevier imageUrl="/images/qualifiche/mantrailing.png"
                             alt="Istruttore Mantrailing CIS"
                             description="Istruttore Mantrailing CIS"
+                        />
+                    </div>
+
+                    <div className="image-container rounded-xl overflow-hidden shadow-lg bg-white relative"
+                        onClick={() => setSelectedImage("/images/qualifiche/Giudice_mantrailing.jpg")}>
+                        <ModalImagePrevier imageUrl="/images/qualifiche/Giudice_mantrailing.jpg"
+                            alt="Giudice Mantrailing CIS"
+                            description="Giudice Mantrailing CIS"
                         />
                     </div>
 
