@@ -39,7 +39,7 @@ const Qualifications: React.FC = () => {
                 <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">Le Mie Qualifiche</h1>
 
                 <div className="mosaic-grid grid grid-cols-1 md:grid-cols-4 gap-6">
-                    <div className="image-container md:col-span-2 row-span-2 rounded-xl overflow-hidden shadow-lg bg-white relative"
+                    <div className="image-container rounded-xl overflow-hidden shadow-lg bg-white relative"
                         onClick={() => setSelectedImage("/images/qualifiche/Diploma_FISC.jpg")}>
                         <ModalImagePrevier
                             imageUrl="/images/qualifiche/Diploma_FISC.jpg"
@@ -98,6 +98,17 @@ const Qualifications: React.FC = () => {
                         />
                         <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 to-transparent">
                             <h3 className="text-white text-xl font-semibold">Tesserino Tecnico FISC</h3>
+                        </div>
+                    </div>
+
+                    <div className="image-container rounded-xl overflow-hidden shadow-lg bg-white relative"
+                        onClick={() => setSelectedImage("/images/qualifiche/tesserino_tecnico_CIS.png")}>
+                        <ModalImagePrevier imageUrl="/images/qualifiche/tesserino_tecnico_CIS.png"
+                            alt="Tesserino Tecnico CIS - 2253"
+                            description="Tesserino Tecnico CIS - 2253"
+                        />
+                        <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 to-transparent">
+                            <h3 className="text-white text-xl font-semibold">Tesserino Tecnico CIS</h3>
                         </div>
                     </div>
                 </div>
