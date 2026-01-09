@@ -102,8 +102,8 @@ const Qualifications: React.FC = () => {
                     </div>
 
                     <div className="image-container rounded-xl overflow-hidden shadow-lg bg-white relative"
-                        onClick={() => setSelectedImage("/images/qualifiche/tesserino_tecnico_CIS.png")}>
-                        <ModalImagePrevier imageUrl="/images/qualifiche/tesserino_tecnico_CIS.png"
+                        onClick={() => setSelectedImage("/images/qualifiche/tesserino_tecnico_CIS.jpg")}>
+                        <ModalImagePrevier imageUrl="/images/qualifiche/tesserino_tecnico_CIS.jpg"
                             alt="Tesserino Tecnico CIS - 2253"
                             description="Tesserino Tecnico CIS - 2253"
                         />
